@@ -20,8 +20,12 @@ object AbstractOp2 {
     }
 
   // These MUST be def - no idea why, very weird
-  implicit def sumOp: AbstractOp2.Aux[SumOp, TNat, ternary.Sum.Aux] = null
   implicit def gcdOp: AbstractOp2.Aux[GcdOp, shapeless.Nat, shapeless.ops.nat.GCD.Aux] = null
-  implicit def multOp: AbstractOp2.Aux[MultOp, binary.BNat, binary.Mult.Aux] = null
+
+  // implicit def sumOp: AbstractOp2.Aux[SumOp, shapeless.Nat, shapeless.ops.nat.Sum.Aux] = null
+  implicit def sumOp: AbstractOp2.Aux[SumOp, TNat, ternary.Sum.Aux] = null
+
+  implicit def multOp: AbstractOp2.Aux[MultOp, ternary.TNat, ternary.Mult.Aux] = null
+  // implicit def multOp: AbstractOp2.Aux[MultOp, binary.BNat, binary.Mult.Aux] = null
 
 }
