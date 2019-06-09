@@ -1,12 +1,7 @@
 
 resolvers ++= Seq (
   "Maven Central Server" at "http://repo1.maven.org/maven2",
-  "Typesafe Releases" at "http://repo.typesafe.com/typesafe/releases/",
-  "Sonatype OSS Releases"  at "http://oss.sonatype.org/content/repositories/releases/",
-  "Sonatype OSS Snapshots" at "http://oss.sonatype.org/content/repositories/snapshots/"
 )
-
-lazy val Benchmark = config("bench").extend(Compile)
 
 lazy val commonSettings = Seq(
   name := "symbology",

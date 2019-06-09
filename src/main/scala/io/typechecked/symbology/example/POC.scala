@@ -14,8 +14,8 @@ object Plus20Times3 {
     SumOut <: Symbol,
     MultOut <: Symbol
   ](implicit
-    sum: DoOperation.Aux[SumOp, A, Symbol._20, SumOut],
-    mult: DoOperation.Aux[MultOp, SumOut, Symbol._3, MultOut],
+    sum: ApplyOperation.Aux[SumOp, A, Symbol._20, SumOut],
+    mult: ApplyOperation.Aux[MultOp, SumOut, Symbol._3, MultOut],
   ): Plus20Times3.Aux[A, MultOut] = null
 
 }
