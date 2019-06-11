@@ -11,7 +11,7 @@ lazy val commonSettings = Seq(
 
   libraryDependencies ++= Seq(
     "com.chuusai" %% "shapeless" % "2.3.3",
-    "io.typechecked" %% "numerology" % "0.1.0-SNAPSHOT",
+    "io.typechecked" %% "numerology" % "0.1.0",
   ),
 
 )
