@@ -1,6 +1,7 @@
 package io.typechecked
 package symbology
 
+// Mapping from a symbol to a backend Nat implementation
 trait SymbolMapping[Backend, S <: Symbol] { type Out <: Backend }
 
 object SymbolMapping {

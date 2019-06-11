@@ -6,6 +6,8 @@ import io.typechecked.numerology.ternary.TNat
 import io.typechecked.numerology.binary
 import io.typechecked.numerology.binary.BNat
 
+// Typelevel equivalent of JVM interface to Function2
+// Takes a name (Op), and returns two things: A Function (Out) which operates on a type (Interface)
 trait Operation2[Op <: OperationName] {
   type Interface
   type Out[_ <: Interface, _ <: Interface, _ <: Interface]

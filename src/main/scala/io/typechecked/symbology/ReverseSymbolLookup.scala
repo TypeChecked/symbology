@@ -1,6 +1,7 @@
 package io.typechecked
 package symbology
 
+// Mapping from a Nat implementation back to Symbol
 trait ReverseSymbolLookup[Backend, N <: Backend] { type Out <: Symbol }
 
 object ReverseSymbolLookup {

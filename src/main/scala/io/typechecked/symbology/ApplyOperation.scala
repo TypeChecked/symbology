@@ -1,6 +1,9 @@
 package io.typechecked
 package symbology
 
+// Application of an Operation2
+// Typelevel equivalent of telling the JVM to apply a Function2 to two arguments
+// Therefore it takes a name, and two arguments
 trait ApplyOperation[Op <: OperationName, S1 <: Symbol, S2 <: Symbol] { type Out <: Symbol }
 
 object ApplyOperation {
