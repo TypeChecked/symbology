@@ -1,7 +1,7 @@
 package io.typechecked
 package symbology
 
-sealed trait Symbol
+trait Symbol
 
 object Symbol {
 
