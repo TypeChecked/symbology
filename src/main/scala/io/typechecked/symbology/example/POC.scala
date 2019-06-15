@@ -10,7 +10,6 @@ object Plus20Times3 {
 
   implicit def instance[
     A <: Symbol,
-    GcdOut <: Symbol,
     SumOut <: Symbol,
     MultOut <: Symbol
   ](implicit
